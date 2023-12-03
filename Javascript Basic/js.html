@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Example</title>
+  </head>
+  <body>
+    <h1>Js Example</h1>
+    <hr />
+    <h4 id="text">Hello</h4>
+    <button onclick="changeText()">Click Me</button>
+    <!-- change the text of h1 from hello to hello, developers on click the button (click me) -->
+
+    <!-- internal js -->
+    <script>
+      function changeText() {
+        // first we need to take the element
+        let text = document.getElementById("text");
+        // then we need to write Hello, Developers
+        text.innerHTML = "Hello, Developers";
+      }
+    </script>
+  </body>
+</html>
