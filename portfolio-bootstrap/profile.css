@@ -1,0 +1,14 @@
+.sn-search-wrapper,
+.sn-search-wrapper button,
+.sn-search-wrapper input {
+  background-color: black;
+  border: none;
+  border-radius: 0;
+}
+.sn-search-wrapper input {
+  display: none !important;
+}
+
+.sn-search-wrapper:hover > input {
+  display: inline-block !important;
+}
