@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using addEventListner</title>
+</head>
+<body>
+    <h1>Example</h1>
+    <hr>
+    <h4 id="text">Hello Devs</h4>
+    <button id="clickMe" type="button">Click Me</button>
+
+    <script>
+        // using event Listener
+        let btn = document.getElementById('clickMe');
+        btn.addEventListener('click', changeText);
+        function changeText(){
+            let elem = document.getElementById('text');
+            elem.innerHTML = "we implemented addEventListener";
+        }
+    </script>
+</body>
+</html>
