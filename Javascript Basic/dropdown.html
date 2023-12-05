@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        .dropdown button{
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+
+        }
+        .drop-menu{
+            background-color: black;
+            width: 300px;
+            color: white;
+            display: none;
+        }
+        .item{
+            padding: 10px;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dropdown</h1>
+    <hr>
+    <div class="dropdown">
+        <button id="dropBtn">Dropdown</button>
+        <div class="drop-menu" id="dropMenu">
+            <div class="item">Home</div>
+            <div class="item">ABout</div>
+            <div class="item">Contact</div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('dropBtn').addEventListener('click', function(){
+            let elem = document.getElementById('dropMenu');
+            if(elem.className == 'drop-menu'){
+                // elem.className += ' show';
+                elem.className = 'drop-menu show';
+            }else{
+                elem.className = 'drop-menu';
+            }
+        })
+    </script>
+</body>
+</html>
