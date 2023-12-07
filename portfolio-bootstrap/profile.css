@@ -9,6 +9,6 @@
   display: none !important;
 }
 
-.sn-search-wrapper:hover > input {
+.sn-search-wrapper input.show{
   display: inline-block !important;
 }

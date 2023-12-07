@@ -69,9 +69,9 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <div class="sn-search-wrapper">
-              <button class="btn btn-success my-2 my-sm-0" type="submit">
+              <input class="form-control" type="text" id="search-input" placeholder="Search" /><button class="btn btn-success my-2 my-sm-0" id="search-btn" type="button">
                 <i class="fas fa-search"></i></button
-              ><input class="form-control" type="text" placeholder="Search" />
+              >
             </div>
           </form>
         </div>
@@ -95,5 +95,16 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      document.getElementById('search-btn').addEventListener('click',function(){
+        let inputElem = document.getElementById('search-input');
+        if(inputElem.className == 'form-control'){
+          inputElem.className += " show";
+        }else{
+          inputElem.className = 'form-control';
+        }
+      })
+    </script>
   </body>
 </html>
