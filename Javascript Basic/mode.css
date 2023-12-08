@@ -1,0 +1,31 @@
+.model-container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+.show{
+    display: flex;
+}
+.middle-box{
+    max-height: 100%;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.middle-box img{
+    width: 100%;
+}
+.middle-box button{
+    background-color: red;
+    padding: 10px 15px;
+    /* border-radius: 10px; */
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin-left: auto;
+}
