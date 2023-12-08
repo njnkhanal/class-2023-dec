@@ -12,3 +12,6 @@
 .sn-search-wrapper input.show{
   display: inline-block !important;
 }
+.sn-header{
+  background-color: rgb(18, 151, 120);
+}
