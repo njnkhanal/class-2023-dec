@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery dropdown</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .dropdown{
+            padding-top: 10px;
+        }
+        #drop-btn{
+            background-color: white;
+            color: black;
+            padding: 10px 15px;
+            border: solid 2px black;
+            display: inline-block;
+        }
+        #drop-menu ul{
+            background-color: black;
+            display: inline-block;
+            color: white;
+            list-style: none;
+        }
+        #drop-menu ul li{
+            padding: 10px 15px;
+            border: solid 2px white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example</h1>
+    <hr>
+    <div class="dropdown">
+        <a href="#" id="drop-btn" >Dropdown</a>
+        <div id="drop-menu">
+            <ul>
+                <li>Drop 1</li>
+                <li>Drop 2</li>
+                <li>Drop 3</li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./dropdown.js"></script>
+</body>
+</html>
